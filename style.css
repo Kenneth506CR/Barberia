@@ -5,676 +5,315 @@ position: absolute;---(no se pasa del div)MODIFICAR A GUSTO LA POSICION DE NAV
 font-weight: bold;---DEFINIR CON NEGRITA
 box-sizing: border-box;---AYUDA AL QUE NO DE PASE DEL LIMITE DE LA PANTALLA
 */
-<<<<<<< HEAD
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
-    background-color: aliceblue;
-    padding: 20px 0; /* Ajustar el padding */
+  background-color: aliceblue;
+  padding: 20px 20px;
 }
 
 .caja {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 940px; /* Agregar un ancho máximo */
-    margin: 0 auto; /* Centrar horizontalmente */
+  width: 940px;
+  position: relative;
 }
 
 nav {
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 110px;
+  right: 0;
 }
 
-nav .menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav .menu li {
-    margin: 0 15px;
-}
-
-nav .menu a {
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+nav li {
+  display: inline-block;
+  margin: 0 0 0 15px;
 }
 
 nav a {
-=======
-
-body{
-    font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
 }
 
-header{
-    background-color: aliceblue;
-    padding: 20px 20px;
-}
-
-.caja{
-    width: 940px;
-    position: relative;
-
-}
-
-nav{
-    position:absolute;
-    top:110px;
-    right: 0;
-}
-
-nav li{
-    display: inline-block;
-    margin: 0 0 0 15px;
-}
-
-nav a{
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-<<<<<<< HEAD
 nav a:hover {
-    text-decoration: underline;
-    color: darkcyan;
+  text-decoration: underline;
+  color: darkcyan;
 }
 .main-contacto {
-=======
-nav a:hover{
-    text-decoration: underline;
-    color: darkcyan;
-}
-.main-contacto{
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .productos {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .productos li {
-    /* display: inline-block; */
-    text-align: center;
-    width: 75%; /*  agarra el 90% y 10% para separar */
-    vertical-align: top;
-    margin: 2rem 0rem 0rem 2.9rem;
-    padding: 30px 20px; /* se pasa de 940 px*/
-=======
-.productos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-.productos li{
-    display:inline-block;
-    text-align: center;
-    width: 30%;  /*  agarra el 90% y 10% para separar */
-    vertical-align: top;
-    margin: 0 1.5%;/* 1.5*6 + 90 = 99%*/
-    padding: 30px 20px;/* se pasa de 940 px*/
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
-    box-sizing: border-box;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 3%;
-<<<<<<< HEAD
-    margin-bottom: 1.5rem;
+  /* display: inline-block; */
+  text-align: center;
+  width: 75%; /*  agarra el 90% y 10% para separar */
+  vertical-align: top;
+  margin: 2rem 0rem 0rem 2.9rem;
+  padding: 30px 20px; /* se pasa de 940 px*/
+  box-sizing: border-box;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3%;
+  margin-bottom: 1.5rem;
 }
 
 .productos li:hover {
-    border-color: chartreuse;
+  border-color: chartreuse;
 }
 
 .productos li:active {
-    border-color: rgb(6, 6, 6);
+  border-color: rgb(6, 6, 6);
 }
 .productos li:hover h2 {
-    font-size: 31px;
+  font-size: 31px;
 }
 
 .productos li h2 {
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .titulo_cabello {
-    padding-left: 4rem;
+  padding-left: 4rem;
 }
 
 .titulo_barba {
-    padding-left: 4.9rem;
+  padding-left: 4.9rem;
 }
 
 .titulo_cabello_barba {
-    padding-left: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .producto-descripcion {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .producto-precio {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 5.5rem;
-    padding-top: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5.5rem;
+  padding-top: 1rem;
 }
 
 footer {
-    text-align: center;
-    background: url(imagenes/bg.jpg);
-    padding: 40px;
+  text-align: center;
+  background: url(imagenes/bg.jpg);
+  padding: 40px;
 }
 
 .copyright {
-    color: aliceblue;
-    font-size: 13px;
-    margin: 20px;
+  color: aliceblue;
+  font-size: 13px;
+  margin: 20px;
 }
 
 form {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 form label,
 form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
 }
 
 .input-padron {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
 }
 
 .checkbox {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .enviar {
-    width: 40%;
-    padding: 10px 0;
-    font-size: 18;
-    font-weight: bold;
-    color: white;
-    background: orange;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
+  width: 40%;
+  padding: 10px 0;
+  font-size: 18;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
 }
 
 .enviar:hover {
-    background: rgb(173, 126, 25);
-    transform: scale(1.03);
+  background: rgb(173, 126, 25);
+  transform: scale(1.03);
 }
 
 table {
-    margin: 40px 40px;
+  margin: 40px 40px;
 }
 
 thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+  background: #555555;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 td,
 thead {
-    border: 1.7px solid #000000;
-    padding: 8px 15px;
+  border: 1.7px solid #000000;
+  padding: 8px 15px;
 }
 
 tbody {
-=======
-}
-
-.productos li:hover{
-    border-color:chartreuse;
-}
-
-.productos li:active {
-    border-color:rgb(6, 6, 6);
-}
-.productos li:hover h2{
-    font-size: 31px;
-}
-
-.productos li h2{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.producto-descripcion{
-    font-size: 18px;
-}
-
-.producto-precio{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-footer{
-    text-align: center;
-    background: url(imagenes/bg.jpg);
-    padding: 40px;
-}
-
-.copyright{
-    color: aliceblue;
-    font-size: 13px;
-    margin: 20px;
-}
-
-form{
-    margin: 40px 0;
-}
-
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.input-padron{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox{
-    margin: 20px 0;
-}
-
-.enviar{
-    width: 40%;
-    padding: 10px 0;
-    font-size: 18;
-    font-weight: bold;
-    color: white;
-    background: orange;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background: rgb(173, 126, 25);
-    transform: scale(1.03);
-}
-
-table{
-    margin: 40px 40px;
-}
-
-thead{
-    background: #555555;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-
-td, thead{
-    border: 1.7px solid #000000;
-    padding: 8px 15px;
-}
-
-tbody{
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
-    background: rgb(240, 237, 237);
+  background: rgb(240, 237, 237);
 }
 
 /*CSS para el home*/
 
-<<<<<<< HEAD
 .banner {
-=======
-.banner{
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
-    width: 100%;
-    border: 5px solid #000000;
+  width: 100%;
+  border: 5px solid #000000;
 }
 
-<<<<<<< HEAD
 .principal {
-    padding: 3em 0;
-    background: #fefefe;
-=======
-.principal{
-    padding: 3em 0;
-    background: #FEFEFE;
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
-    width: 940px;
-    margin: 0 auto;
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .titulo-principal {
-    text-align: center;
-    font-size: 2em; /*Multiplicar x2 el tamaño por defecto del navegador*/
-    margin: 0 0 1em;
-    clear: left;
+  text-align: center;
+  font-size: 2em; /*Multiplicar x2 el tamaño por defecto del navegador*/
+  margin: 0 0 1em;
+  clear: left;
 }
 
 .principal p {
-    margin: 0 0 1em;
+  margin: 0 0 1em;
 }
 
 .principal strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .principal em {
-    font-style: italic;
+  font-style: italic;
 }
 
 .utensilios {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 .mapa {
-    padding: 3em 0;
-    background: linear-gradient(white, #b1b0b0);
+  padding: 3em 0;
+  background: linear-gradient(white, #b1b0b0);
 }
 
 .mapa p {
-    margin: 0 0 2em;
-    text-align: center;
+  margin: 0 0 2em;
+  text-align: center;
 }
 .mapa-contenido {
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .diferenciales {
-    padding: 3em 0;
-    background: linear-gradient(#b1b0b0, #888888);
+  padding: 3em 0;
+  background: linear-gradient(#b1b0b0, #888888);
 }
 
 .contenido-diferenciales {
-    width: 640px;
-    margin: 0 auto;
+  width: 640px;
+  margin: 0 auto;
 }
 
 .lista-diferenciales {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .items {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 .items:before {
-    content: "🟊";
+  content: "🟊";
 }
 
 .items:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .imagen-diferenciales {
-    width: 60%;
-    opacity: 90%;
-    transition: 1s;
-    box-shadow: 10px 10px 8px #000000;
+  width: 60%;
+  opacity: 90%;
+  transition: 1s;
+  box-shadow: 10px 10px 8px #000000;
 }
 
 .imagen-diferenciales:hover {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .video {
-    width: 560px;
-    margin: 1em auto;
+  width: 560px;
+  margin: 1em auto;
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-    nav .menu {
-        text-align: center;
-    }
-
-    .caja,
-    .principal,
-    .mapa-contenido,
-    .contenido-diferenciales,
-    .video {
-        width: auto;
-    }
-
-    .lista-diferenciales,
-    .imagen-diferenciales {
-        width: 100%;
-    }
-
-    .productos li {
-        display: flex;
-        flex-wrap: wrap;
-        padding: none;
-    }
-
-    .main-contacto {
-        width: 100%;
-        margin-left: 1rem;
-    }
-
-    .input-padron {
-        width: 77%;
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
-}
-
-/* Tu CSS existente aquí */
-
-/* Media query para pantallas pequeñas, como dispositivos móviles */
-@media screen and (max-width: 480px) {
-    header .caja {
-        text-align: center;
-    }
-
-    nav .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: aliceblue;
-        padding: 10px;
-        text-align: center; /* Centrar el texto en pantallas pequeñas */
-    }
-
-    nav .menu.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    nav ul {
-        text-align: center;
-        padding: 0;
-    }
-
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .caja,
-    .principal,
-    .mapa-contenido,
-    .contenido-diferenciales,
-    .video,
-    .main-contacto {
-        width: 100%;
-        padding: 0;
-    }
-
-    .lista-diferenciales,
-    .imagen-diferenciales {
-        width: 100%;
-    }
-
-    .productos li {
-        display: block;
-        margin: 20px 0;
-        padding: 10px;
-    }
-
-    .input-padron {
-        width: 100%;
-    }
-
-    .enviar {
-        width: 100%;
-    }
-
-    .mapa iframe {
-        height: 200px;
-    }
-=======
-.titulo-principal{
+  h1 {
     text-align: center;
-    font-size: 2em;/*Multiplicar x2 el tamaño por defecto del navegador*/
-    margin: 0 0 1em;
-    clear: left;
->>>>>>> parent of ca0575c (Responsive de producto y contacto)
+  }
+
+  nav {
+    position: static;
+  }
+
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenido-diferenciales,
+  .video {
+    width: auto;
+  }
+
+  .lista-diferenciales,
+  .imagen-diferenciales {
+    width: 100%;
+  }
+
+  .productos li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: none;
+  }
+
+  .main-contacto {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .input-padron {
+    width: 77%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
-
-.principal p{
-    margin: 0 0 1em;
-}
-
-.principal strong{
-    font-weight: bold;
-}
-
-.principal em{
-    font-style: italic;
-}
-
-.utensilios{
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0 ;
-}
-
-.mapa{
-    padding: 3em 0;
-    background: linear-gradient(white,#b1b0b0);
-}
-
-.mapa p{
-    margin: 0 0 2em;
-    text-align: center;
-}
-.mapa-contenido{
-    width: 940px;
-    margin: 0 auto;
-
-}
-
-.diferenciales{
-    padding: 3em 0;
-    background: linear-gradient(#b1b0b0,#888888);
-
-}
-
-.contenido-diferenciales{
-    width: 640px;
-    margin: 0 auto;
-}
-
-.lista-diferenciales{
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.items{
-    line-height: 1.6;
-}
-
-.items:before{
-    content: "🟊";
-}
-
-.items:first-child{
-    font-weight: bold;
-}
-
-
-.imagen-diferenciales{
-    width: 60%;
-    opacity: 90%;
-    transition: 1s;
-    box-shadow: 10px 10px 8px #000000;
-}
-
-.imagen-diferenciales:hover{
-    opacity: 100%;
-}
-
-.video{
-    width: 560px;
-    margin: 1em auto;
-}
-
-@media screen and (max-width:480px) {
-    h1{
-        text-align: center;
-    }
-
-    nav{
-        position: static;
-    }
-
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
-        width: auto;
-    }
-
-    .lista-diferenciales, .imagen-diferenciales{
-        width: 100%;
-    }
-
-    .productos li{
-        display: block;
-    }
-
-    
-}
-
