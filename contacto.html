@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Contacto-Barbería Alura</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="caja">
-            <h1><img src="imagenes/logo.png" alt="Logo de la Barberia Alura"></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <h1><img src="imagenes/logo.png" alt="Logo de la Barberia Alura" /></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main class="main-contacto">
-        <form>
-            <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido" class="input-padron" required>
+      <form>
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required />
 
-            <label for="correoelectronico">Correo Electronico</label>
-            <input type="email" id="correoelectronico" class="input-padron" required placeholder="alura@alura.com">
+        <label for="correoelectronico">Correo Electronico</label>
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="alura@alura.com"
+        />
 
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXXX XXXX">
+        <label for="telefono">Telefono</label>
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(XXX) XXXX XXXX"
+        />
 
-            <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-            <fieldset>
-                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          cols="70"
+          rows="10"
+          id="mensaje"
+          class="input-padron"
+          required
+        ></textarea>
+        <fieldset>
+          <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
-                <label for="radio-email"> <input type="radio" name="contacto" value="email"
-                        id="radio-email">Email</label>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contacto"
+              value="email"
+              id="radio-email"
+            />Email</label
+          >
 
-                <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono"
-                        id="radio-telefono">Teléfono</label>
+          <label for="radio-telefono">
+            <input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="radio-telefono"
+            />Teléfono</label
+          >
 
-                <label for="radio-whatsapp"> <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
-                        checked>WhatsApp</label>
-            </fieldset>
-            <fieldset>
-                <legend>¿En que horario le gustaría ser atendido?</legend>
-                <select>
-                    <option>Mañana</option>
-                    <option>Tarde</option>
-                    <option>Noche</option>
-                </select>
-            </fieldset>
-            <label class="checkbox"> <input type="checkbox" checked> ¿Le gustaría recibir novedades de la Barbería
-                Alura?</label>
-            <input type="submit" value="Enviar formulario" class="enviar">
-        </form>
-        <table>
-            <thead>
-                <tr>
-                    <td>Día</td>
-                    <td>Horario</td>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Lunes</td>
-                <td>8AM ~ 5PM</td>
-            </tr>
-            <tr>
-                <td>Miércoles</td>
-                <td>8AM ~ 8PM</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>8AM ~ 6PM</td>
-            </tr>
-            </tbody>
-        </table>
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              name="contacto"
+              value="whatsapp"
+              id="radio-whatsapp"
+              checked
+            />WhatsApp</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>¿En que horario le gustaría ser atendido?</legend>
+          <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </fieldset>
+        <label class="checkbox">
+          <input type="checkbox" checked /> ¿Le gustaría recibir novedades de la
+          Barbería Alura?</label
+        >
+        <input type="submit" value="Enviar formulario" class="enviar" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <td>Día</td>
+            <td>Horario</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>8AM ~ 5PM</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>8AM ~ 8PM</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>8AM ~ 6PM</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
-        <img src="imagenes/logo-blanco.png" alt="Logo de la Barbería Alura">
-        <p class="copyright">&copy Copyring Barberia Alura - 2023</p>
+      <img src="imagenes/logo-blanco.png" alt="Logo de la Barbería Alura" />
+      <p class="copyright">&copy Copyring Barberia Alura - 2023</p>
     </footer>
-</body>
-
+  </body>
 </html>
