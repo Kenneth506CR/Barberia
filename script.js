@@ -25,15 +25,6 @@
     toggleCitasLink(username);
   }
 
-  function toggleCitasLink(username) {
-    var citasLink = document.getElementById("citasLink");
-    if (username === "Kenneth506") {
-      citasLink.style.display = "block";
-    } else {
-      citasLink.style.display = "none";
-    }
-  }
-
   // Función para manejar el envío del formulario de contacto
   function handleContactForm(event) {
     event.preventDefault();
@@ -80,23 +71,8 @@
       localStorage.setItem("formData", JSON.stringify([formData]));
     }
 
-    // Mostrar los valores en una alerta (puedes hacer lo que quieras con ellos aquí)
-    alert(
-      "Nombre y Apellido: " +
-        nombreApellido +
-        "\nCorreo Electrónico: " +
-        correoElectronico +
-        "\nTeléfono: " +
-        telefono +
-        "\nMensaje: " +
-        mensaje +
-        "\nContacto Preferido: " +
-        contactoPreferido +
-        "\nHorario Preferido: " +
-        horarioPreferido +
-        "\nRecibir Novedades: " +
-        recibirNovedades
-    );
+    // Mostrar los valores en una alerta
+    alert("Cita Registrada");
 
     // Llamar a la función para mostrar los datos después de manejar el formulario
     displayFormData();
@@ -151,5 +127,19 @@
 
     // Llamar a la función para mostrar los datos al cargar la página
     displayFormData();
+  });
+
+  document.getElementById("loginButton").addEventListener("click", function () {
+    // Obtener el nombre de usuario
+    var username = document.getElementById("user").value;
+
+    // Verificar el nombre de usuario y mostrar/ocultar el enlace según el caso
+    if (username === "Kenneth506") {
+      // Mostrar el enlace si el usuario es "Kenneth506"
+      document.getElementById("citaslink").style.display = "block";
+    } else {
+      // Ocultar el enlace para otros usuarios
+      document.getElementById("citaslink").style.display = "none";
+    }
   });
 })();

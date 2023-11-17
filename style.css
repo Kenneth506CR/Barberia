@@ -12,10 +12,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.citasLink {
-  display: none;
-}
-
 header {
   background-color: aliceblue;
   padding-bottom: 2rem;
@@ -55,6 +51,7 @@ nav a:hover {
   flex-direction: row;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  gap: 13rem;
 }
 
 .productos li {
