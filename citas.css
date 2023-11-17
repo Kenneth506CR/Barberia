@@ -1,0 +1,96 @@
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+header {
+    background-color: aliceblue;
+    padding-bottom: 2rem;
+  }
+
+  nav {
+    position: absolute;
+    top: 110px;
+    right: 1rem;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+  }
+  
+  nav a {
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: darkcyan;
+  }
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#formDataList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#formDataList li {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#formDataList strong {
+  color: #333;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#formDataList p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#formDataList li {
+  position: relative; /* Añade posición relativa para posicionar los iconos */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.edit-icon,
+.delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+h2 {
+text-align: center;
+padding-top: 2rem;
+padding-bottom: 3rem;
+font-size: 2rem;
+}
