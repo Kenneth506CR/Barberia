@@ -88,6 +88,12 @@ nav a:hover {
   transition: 0.3s;
 }
 
+.producto-precio {
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-style: normal;
+}
+
 footer {
   text-align: center;
   background: url(imagenes/bg.jpg);
